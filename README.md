@@ -1,6 +1,6 @@
 # Frilement 📂
 
-Frilement is a Python librairy to split large data file like `csv` files into multiple little files.
+Frilement is a Python librairy to split large data files like `csv` files into multiple little files, inside folders (clusters) or not.
 
 ## Available file formats 📃
 ### Input ↩️
