@@ -17,7 +17,8 @@ class FrilementService:
 
         with FrilementPool("d", file_format if output_file_format is None else output_file_format, config) as p:
             for segment in iterator:
-                p.enqueue_segment(segment)
+                pd_df = segment.compute()
+                p.enqueue_segment(pd_df)
 
     def frilements(files_path: list[str], config: FrilementConfig, output_file_format: FileFormat) -> None:
         """
@@ -34,4 +35,4 @@ class FrilementService:
                 iterator, _ = FileService.create_reader(file_path, config)
 
                 for segment in iterator:
-                    p.enqueue_segment(segment)
+                    p.enqueue_segment(segment.compute())

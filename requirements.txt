@@ -1,2 +1,3 @@
-pandas
 streamingpool
+pyarrow
+dask[dataframe]

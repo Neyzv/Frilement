@@ -21,7 +21,7 @@ from frilement import FrilementConfig
 
 CONFIG: FrilementConfig = FrilementConfig(
     "./output",  # Path to the output folder
-    500_000,  # Max amount of datas loaded in memory at a time
+    250e6,  # Max amount of datas loaded in memory at a time
     250_000,  # Max size of a result file
     True,  # Determins if file clustering is enabled
     20,  # Max amount of file by cluster
@@ -38,7 +38,7 @@ from frilement import FrilementConfig, FrilementService, FileFormat
 
 CONFIG: FrilementConfig = FrilementConfig(
     "./output",  # Path to the output folder
-    500_000,  # Max amount of datas loaded in memory at a time
+    250e6,  # Max amount of datas loaded in memory at a time
     250_000,  # Max size of a result file
     True,  # Determins if file clustering is enabled
     20,  # Max amount of file by cluster

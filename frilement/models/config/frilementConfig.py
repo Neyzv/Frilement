@@ -12,7 +12,7 @@ class FrilementConfig:
     __max_file_amount_cluster: int
     __file_analyzer_chunk_size: int
 
-    def __init__(self, output_path: str, data_chunk_size: int = 500_000, max_result_file_size: int = 250_000,
+    def __init__(self, output_path: str, data_chunk_size: int = 250e6, max_result_file_size: int = 250_000,
                 clustering_enabled: bool = True, max_file_amount_cluster: int = 20, file_analyzer_chunk_size: int = 8192) -> None:
         self.__output_path = Path(output_path)
         self.__data_chunk_size = data_chunk_size
